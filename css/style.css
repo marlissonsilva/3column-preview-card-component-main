@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.container {
+    font-size: 15px;
+    display: grid;
+    grid-template: auto/ auto auto auto;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 25px 0px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.rect {
+    width: 300px;
+    padding: 2.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text {
+    height: 150px;
+    line-height: 1.8rem;
+    text-align: left;
+    padding-right: .5rem;
+
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 28px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    margin-top: 20%;
+
+}
+
+.orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.orange:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+
+}
+
+.blue {
+    color: hsl(184, 100%, 22%);
+}
+
+.blue:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.green {
+    color: hsl(179, 100%, 13%);
+}
+
+.green:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/* ******************mobile****************** */
+
+@media screen and (min-width:350px) and (max-width:930px) {
+    .container {
+        max-width: 930px;
+        font-size: 15px;
+        display: grid;
+        grid-template: auto auto auto / auto;
+        padding: 40px;
+        margin-top: 0px;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .rect {
+        width: 345px;
+        padding: 50px;
+    }
+
+    .text {
+        height: 90px;
+    }
+
+    button {
+        margin-top: 5rem;
+    }
+
+
+}
